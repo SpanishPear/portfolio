@@ -1,0 +1,4 @@
+#Ignore artificats:
+build
+coverage
+
