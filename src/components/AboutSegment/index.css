@@ -1,0 +1,47 @@
+/* -------------- About Page ------------- */
+
+.about-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content-container {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+}
+
+.about-content-text-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.about-heading-container {
+  display: flex;
+  align-items: flex-end;
+}
+
+.about-heading-right-border {
+  width: 300%;
+  border-bottom: 5px solid #378199;
+  margin-bottom: 1vh;
+  margin-left: 1vw;
+}
+
+.about-heading-text {
+  margin: 0;
+}
+
+.about-content-text {
+  font-size: 2vh;
+  width: 60%;
+  line-height: 3vh;
+}
+
+#about-headshot {
+  height: 60vh;
+}

@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-color: #caf2ff;
+  height: 100vh;
+}
+
+.main-viewport {
+  height: 100vh;
+}
+
+/* -------------- Cosntruction Page ------------- */
+.construction-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.construction-image-container > img {
+  width: 300px;
+  height: 300px;
+}
+
+/* -------------- Blog Page --------------------- */
+.viewport-container {
+  height: 100%;
+}
