@@ -11,6 +11,7 @@ const NavBar = () => {
           <Link id="home" class="nav-right-item" to="/">
             Home
           </Link>
+          {/* this will need to be replaced */}
           <Link id="about-button" class="nav-right-item" to="/">
             About
           </Link>

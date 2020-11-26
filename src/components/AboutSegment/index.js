@@ -1,6 +1,7 @@
 import React from 'react';
 import headshot from '../../assets/headshot.png';
 import './index.css';
+import data from '../../assets/data.json';
 
 const AboutSegment = () => {
   console.log('test');
@@ -13,10 +14,20 @@ const AboutSegment = () => {
             <h1 className="about-heading-text">About</h1>
             <div className="about-heading-right-border" />
           </div>
-          <p className="about-content-text">Content</p>
+          <p className="about-content-text">
+            <NewlineText text={data.about} />
+            If you&apos;re looking for my teaching website, you can access that{' '}
+            <a href="teach.spanishpe.ar" title="Shrey's Class">
+              here
+            </a>
+          </p>
         </div>
       </div>
     </div>
   );
+};
+
+const NewlineText = ({ text }) => {
+  return text.split('\n').map((str) => <p>{str}</p>);
 };
 export default AboutSegment;

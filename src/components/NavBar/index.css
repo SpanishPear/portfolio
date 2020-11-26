@@ -12,6 +12,7 @@
   display: flex;
   justify-content: flex-end;
   padding-left: 10%;
+  min-height: 9vh;
 }
 
 .sticky {
@@ -25,7 +26,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 9vh;
   margin: 0 5vw;
   padding-bottom: 1vh;
 }
