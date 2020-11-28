@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    border: '1px solid blue',
+    // border: '1px solid blue',
   },
 
   aboutHeadshot: {

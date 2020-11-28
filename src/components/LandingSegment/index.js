@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '85vh',
-    border: '1px solid red',
+    // border: '1px solid red',
   },
   landingTextTitle: {
     fontFamily: 'Roboto, sans-serif',
