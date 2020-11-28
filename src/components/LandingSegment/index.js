@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   landingContainer: {
-    height: '85vh',
+    height: '90vh',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
