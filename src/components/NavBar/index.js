@@ -61,7 +61,7 @@ const NavBar = () => {
             Projects
           </Link>
           <Link className={classes.navRightItem} to="/blog">
-            Blog
+            Blog!
           </Link>
           <Link className={classes.navRightItem} to="/resume">
             Resume
