@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
-import headshot from '../../assets/headshot.png';
+import ProgressiveImage from 'react-progressive-image';
 import data from '../../assets/data.json';
 
 const useStyles = makeStyles((theme) => ({
@@ -66,7 +66,24 @@ const AboutSegment = () => {
   return (
     <Box className={classes.aboutContainer}>
       <Box display="flex" flexDirection="row" width="80%">
-        <img className={classes.aboutHeadshot} alt="headshot" src={headshot} />
+        <ProgressiveImage
+          placeholder="/static/media/headshot-min.683b54c4.png"
+          src="/static/media/headshot.c973205f.png"
+          delay={50}
+          initialBlur={50}
+        >
+          {(src, loading) => (
+            <img
+              className={classes.aboutHeadshot}
+              src={src}
+              loading="lazy"
+              style={{ filter: loading ? 'blur(3px)' : 'none' }}
+              alt="shrey's headshot"
+              width="367"
+              height="551"
+            />
+          )}
+        </ProgressiveImage>
         <Box className={classes.aboutContentTextContainer}>
           <Box display="flex" flexDirection="column" alignItems="flex-start">
             <Box className={classes.headingTitle} m={0}>

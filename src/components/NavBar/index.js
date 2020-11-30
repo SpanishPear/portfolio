@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 // import './index.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
+import ProgressiveImage from 'react-progressive-image-loading';
 import logo from '../../assets/logo.svg';
+import logoMini from '../../assets/logo-mini.svg';
 
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -67,7 +69,13 @@ const NavBar = () => {
             Resume
           </Link>
         </div>
-        <img className={classes.logo} src={logo} alt="logo" />
+        <ProgressiveImage
+          preview={logoMini}
+          src={logo}
+          render={(src) => (
+            <img loading="lazy" className={classes.logo} src={src} alt="logo" />
+          )}
+        />
       </Box>
     </header>
   );
