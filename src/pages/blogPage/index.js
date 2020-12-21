@@ -4,14 +4,14 @@ import { NavBar, BlogCard } from '../../components';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    maxWidth: '1335px',
+    maxWidth: '1095px',
     margin: '0 auto',
   },
   gridRow: {
     display: 'flex',
     flexFlow: 'row wrap',
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-start',
     // paddingLeft: '8%',
   },
   gridItem: {
