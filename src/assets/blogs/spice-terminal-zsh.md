@@ -51,7 +51,7 @@ ZSH (aka the Z Shell) - is nothing more than a different shell. So why do we car
 
 ### bash vs zsh
 
-The difference mainly between zsh and bash is that zsh comes with an extended set of features, and many well supported plugin and theme managers, such as powerlevel10k - which we mentioned above. Some of the useful features include:
+The difference mainly between zsh and bash is that zsh comes with an extended set of features, and many well supported plugin and theme managers, such as powerlevel10k - which we mentioned above. Some of the useful productivity hacks include:
 
 - command history shared across all running shells, rather than just the current running shell
 - better tab completion (zsh cycles through all options, rather than listing them all)
