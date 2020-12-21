@@ -3,11 +3,9 @@ import { AboutSegment, LandingSegment, NavBar } from '../../components';
 import './index.css';
 
 const LandingPage = () => {
-  console.log('hi');
-
   return (
     <div>
-      <NavBar />
+      <NavBar active="Home" />
       <LandingSegment />
       <AboutSegment />
     </div>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box } from '@material-ui/core';
 import ProgressiveImage from 'react-progressive-image-loading';
+import PropTypes from 'prop-types';
 import logo from '../../assets/logo.svg';
 import logoMini from '../../assets/logo-mini.svg';
 
@@ -38,10 +39,19 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: '20px',
     },
   },
+  active: {
+    fontWeight: 'bold',
+    textDecoration: 'underline',
+  },
 }));
 
-const NavBar = () => {
+const NavBar = ({ active }) => {
   const classes = useStyles();
+
+  const isActive = (slug) => {
+    return slug === active ? `${classes.active}` : '';
+  };
+
   return (
     <header className={classes.header}>
       <Box
@@ -52,20 +62,36 @@ const NavBar = () => {
         paddingBottom="1vh"
       >
         <div className="nav-item-right-container">
-          <Link id="home" className={classes.navRightItem} to="/">
+          <Link
+            id="home"
+            className={`${classes.navRightItem} ${isActive('Home')}`}
+            to="/"
+          >
             Home
           </Link>
-          {/* this will need to be replaced */}
-          <Link id="about-button" className={classes.navRightItem} to="/">
+          <Link
+            id="about-button"
+            className={`${classes.navRightItem} ${isActive('About')}`}
+            to="/"
+          >
             About
           </Link>
-          <Link className={classes.navRightItem} to="/projects">
+          <Link
+            className={`${classes.navRightItem} ${isActive('Projects')}`}
+            to="/projects"
+          >
             Projects
           </Link>
-          <Link className={classes.navRightItem} to="/blog">
+          <Link
+            className={`${classes.navRightItem} ${isActive('Blog')}`}
+            to="/blog"
+          >
             Blog!
           </Link>
-          <Link className={classes.navRightItem} to="/resume">
+          <Link
+            className={`${classes.navRightItem} ${isActive('Resume')}`}
+            to="/resume"
+          >
             Resume
           </Link>
         </div>
@@ -81,4 +107,7 @@ const NavBar = () => {
   );
 };
 
+NavBar.propTypes = {
+  active: PropTypes.string.isRequired,
+};
 export default NavBar;
