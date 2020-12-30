@@ -36,6 +36,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
 }));
+
 const BlogPage = () => {
   const classes = useStyles();
 

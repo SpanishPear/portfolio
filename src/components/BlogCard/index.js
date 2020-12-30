@@ -8,12 +8,14 @@ import {
   Box,
   Typography,
 } from '@material-ui/core';
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
     marginRight: 20,
     marginTop: 20,
+    cursor: 'pointer',
   },
   media: {
     height: 140,
@@ -41,9 +43,14 @@ const useStyles = makeStyles({
 
 const BlogCard = ({ image, subject, date, title }) => {
   const classes = useStyles();
-
+  const history = useHistory();
   return (
-    <Card className={classes.root}>
+    <Card
+      className={classes.root}
+      onClick={() => {
+        history.push(`/blog/${title.toLowerCase().replaceAll(' ', '_')}`);
+      }}
+    >
       <CardMedia
         className={classes.media}
         image={image}
