@@ -10,7 +10,7 @@ to
 
 ## Assumptions
 
-- you've watched [Tom Kunc's Secrets of CSE workshop]()
+- you've watched [Tom Kunc's Secrets of CSE workshop](https://www.youtube.com/watch?v=pKREAYv-Uno) (helpful, not required)
 - you haven't messed with the cse terminal before, and your login shell is still bash (ie you havent emailed SS to change it)
 
 ## Some basic colours :)
