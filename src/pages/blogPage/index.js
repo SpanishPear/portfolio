@@ -6,13 +6,24 @@ const useStyles = makeStyles((theme) => ({
   container: {
     maxWidth: '1095px',
     margin: '0 auto',
+    [theme.breakpoints.down('1095')]: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
   },
   gridRow: {
     display: 'flex',
     flexFlow: 'row wrap',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    // paddingLeft: '8%',
+    [theme.breakpoints.down('1095')]: {
+      width: '70%',
+    },
+    [theme.breakpoints.down('1045')]: {
+      width: '40%',
+      minWidth: 295,
+    },
   },
   gridItem: {
     height: '550px',
