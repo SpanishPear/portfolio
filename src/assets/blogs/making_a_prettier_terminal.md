@@ -31,7 +31,7 @@ source ~/.bashrc
 
 in order to see it take effect.
 
-![Basic bland terminal](https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/1511-colours.png)
+<img style="margin: 0 auto;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/1511-colours.png">
 
 ## Powerlevel10k
 
@@ -39,7 +39,7 @@ in order to see it take effect.
 
 Powerlevel10k is one of the most popular plugin frameworks for Zsh. It comes with many features and extensions, and allows you to customise nearly everything to your liking. It brags an "out of box" experience, meaning that theres not much setup we have to do get it working :D
 
-![Powerlevel10k](https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png)
+<img style="margin: 0 auto;" src="https://raw.githubusercontent.com/romkatv/powerlevel10k-media/master/prompt-styles-high-contrast.png">
 
 ### What is zsh?
 
@@ -112,7 +112,7 @@ OH NO everything is broken :(
 
 If you're looking at something like this (without the first line)
 
-![Broken CSE ZSH](https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/zsh-cse-broke.png)
+<img style="margin: 0 auto;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/zsh-cse-broke.png">
 
 then don't worry - I knew that would break, so lets talk about how to fix it.
 
@@ -265,7 +265,7 @@ source ~/.zshrc
 ### exa
 
 Exa is a "modern replacement for _ls_
-![exa](https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/exa.png)
+<img style="margin: 0 auto;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/exa.png" alt="exa picture">
 
 simply run
 
