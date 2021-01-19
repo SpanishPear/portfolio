@@ -295,6 +295,7 @@ Checkout the following extra resources
 ### Further Customisation:
 
 [powerlevel10k configuration](https://github.com/romkatv/powerlevel10k/blob/master/README.md#configuration)
+
 [prompt colour customisation](https://github.com/romkatv/powerlevel10k/blob/master/README.md#how-do-i-change-prompt-colors)
 
 ### Fonts are showing weird symbols
