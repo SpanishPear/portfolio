@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 import { NavBar } from '../../components';
 
 const BlogPost = () => {
-  const [text, setText] = useState('#Loading...');
+  const [text, setText] = useState('# Loading...');
 
   const { slug } = useParams();
   const url = `https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/${slug}.md`;
@@ -16,7 +16,7 @@ const BlogPost = () => {
 
   return (
     <Box>
-      <NavBar />
+      <NavBar active="Blog" />
       <Box
         display="flex"
         alignItems="center"

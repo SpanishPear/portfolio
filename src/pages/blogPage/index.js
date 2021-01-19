@@ -69,7 +69,7 @@ const BlogPage = () => {
               title="Making a prettier terminal"
               image="https://material-ui.com/static/images/cards/contemplative-reptile.jpg"
             />
-            <BlogCard
+            {/* <BlogCard
               className={classes.gridItem}
               subject="DUMMY DATA"
               date="DUMMY DATA"
@@ -89,7 +89,7 @@ const BlogPage = () => {
               date="DUMMY DATA"
               title="OH MY SOME DUMMY DATA"
               image="https://material-ui.com/static/images/cards/contemplative-reptile.jpg"
-            />
+            /> */}
           </div>
         </div>
       </Box>
