@@ -1,3 +1,4 @@
+import { Box } from '@material-ui/core';
 import React, { useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useParams } from 'react-router-dom';
@@ -12,7 +13,26 @@ const BlogPost = () => {
     .then((res) => res.text())
     .then((txt) => setText(txt));
 
-  return <ReactMarkdown source={text} />;
+  return (
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+      flexDirection="column"
+    >
+      <Box
+        display="flex"
+        justifyContent="center"
+        flexDirection="column"
+        width="50%"
+        border="1px solid black"
+        padding="30px"
+        background-color="red"
+      >
+        <ReactMarkdown source={text} />
+      </Box>
+    </Box>
+  );
 };
 
 export default BlogPost;
