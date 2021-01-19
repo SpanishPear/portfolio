@@ -64,7 +64,7 @@ const AboutSegment = () => {
   const classes = useStyles();
 
   return (
-    <Box className={classes.aboutContainer}>
+    <Box className={classes.aboutContainer} id="about">
       <Box display="flex" flexDirection="row" width="80%">
         <ProgressiveImage
           placeholder="/static/media/headshot-min.683b54c4.png"

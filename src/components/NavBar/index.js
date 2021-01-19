@@ -69,13 +69,14 @@ const NavBar = ({ active }) => {
           >
             Home
           </Link>
-          <Link
+          <a
             id="about-button"
             className={`${classes.navRightItem} ${isActive('About')}`}
-            to="/"
+            href="/#about"
           >
             About
-          </Link>
+          </a>
+
           <Link
             className={`${classes.navRightItem} ${isActive('Projects')}`}
             to="/projects"
