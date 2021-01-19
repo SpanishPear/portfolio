@@ -6,7 +6,7 @@ From
 
 to
 
-<img style="text-align: center;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/pretty-terminal.png">
+<img style="margin: 0 auto;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/pretty-terminal.png">
 
 ## Assumptions
 
@@ -217,7 +217,7 @@ source ~/.zshrc
 
 Suggesting commands as you type based on history and completions!!
 As you type commands, you will see a completion offered after the cursor in a muted gray color.
-If you press the<kvd> → </kbd> key (forward-char widget) or <kbd>End</kbd> (end-of-line widget) with the cursor at the end of the buffer, it will accept the suggestion, replacing the contents of the command line buffer with the suggestion.
+If you press the<kbd> → </kbd> key (forward-char widget) or <kbd>End</kbd> (end-of-line widget) with the cursor at the end of the buffer, it will accept the suggestion, replacing the contents of the command line buffer with the suggestion.
 
 Clone the plugin
 
