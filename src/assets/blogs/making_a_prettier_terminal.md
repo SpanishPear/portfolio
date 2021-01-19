@@ -6,7 +6,7 @@ From
 
 to
 
-![Basic bland terminal](https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/pretty-terminal.png)
+<img style="text-align: center;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/pretty-terminal.png">
 
 ## Assumptions
 

@@ -29,7 +29,7 @@ const BlogPost = () => {
         padding="30px"
         background-color="red"
       >
-        <ReactMarkdownWithHtml source={text} />
+        <ReactMarkdownWithHtml source={text} allowDangerousHtml />
         {/* <ReactMarkdown source={text} /> */}
       </Box>
     </Box>
