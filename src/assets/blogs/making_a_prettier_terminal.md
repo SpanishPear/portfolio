@@ -2,9 +2,7 @@
 
 From
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/basic-terminal.png">
-</p>
+<img style="text-align: center;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/basic-terminal.png">
 
 to
 
