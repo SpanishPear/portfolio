@@ -1,4 +1,4 @@
-# How to make an aesthetic cse terminal
+<h1 style="text-align: center;">How to make an aesthetic cse terminal</h1>
 
 From
 
