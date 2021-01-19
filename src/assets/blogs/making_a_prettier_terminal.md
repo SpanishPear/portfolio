@@ -2,11 +2,11 @@
 
 From
 
-![Basic bland terminal](assets/images/basic-terminal.png)
+![Basic bland terminal](https://github.com/SpanishPear/portfolio/blob/main/src/assets/blogs/assets/images/basic-terminal.png)
 
 to
 
-![Basic bland terminal](assets/images/pretty-terminal.png)
+![Basic bland terminal](https://github.com/SpanishPear/portfolio/blob/main/src/assets/blogs/assets/images/pretty-terminal.png)
 
 ## Assumptions
 
@@ -31,7 +31,7 @@ source ~/.bashrc
 
 in order to see it take effect.
 
-![Basic bland terminal](assets/images/1511-colours.png)
+![Basic bland terminal](https://github.com/SpanishPear/portfolio/blob/main/src/assets/blogs/assets/images/1511-colours.png)
 
 ## Powerlevel10k
 
@@ -112,7 +112,7 @@ OH NO everything is broken :(
 
 If you're looking at something like this (without the first line)
 
-![Broken CSE ZSH](assets/images/zsh-cse-broke.png)
+![Broken CSE ZSH](https://github.com/SpanishPear/portfolio/blob/main/src/assets/blogs/assets/images/zsh-cse-broke.png)
 
 then don't worry - I knew that would break, so lets talk about how to fix it.
 
@@ -265,7 +265,7 @@ source ~/.zshrc
 ### exa
 
 Exa is a "modern replacement for _ls_
-![exa](assets/images/exa.png)
+![exa](https://github.com/SpanishPear/portfolio/blob/main/src/assets/blogs/assets/images/exa.png)
 
 simply run
 
