@@ -1,6 +1,6 @@
 import { Box } from '@material-ui/core';
 import React, { useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import ReactMarkdownWithHtml from 'react-markdown/with-html';
 import { useParams } from 'react-router-dom';
 
 const BlogPost = () => {
@@ -29,7 +29,8 @@ const BlogPost = () => {
         padding="30px"
         background-color="red"
       >
-        <ReactMarkdown source={text} />
+        <ReactMarkdownWithHtml source={text} />
+        {/* <ReactMarkdown source={text} /> */}
       </Box>
     </Box>
   );
