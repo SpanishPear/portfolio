@@ -12,6 +12,7 @@ to
 
 - you've watched [Tom Kunc's Secrets of CSE workshop](https://www.youtube.com/watch?v=pKREAYv-Uno) (helpful, not required)
 - you haven't messed with the cse terminal before, and your login shell is still bash (ie you havent emailed SS to change it)
+- If you get stuck, message me on the CSESoc Discord - @Shrey
 
 ## Some basic colours :)
 
@@ -104,7 +105,14 @@ after you save this, we need to once again make sure to refresh your terminal co
 source ~/.zshrc
 ```
 
-in order to see it take effect.
+in order to see it take effect. 
+
+If nothing happens, run: 
+```
+zsh
+```
+
+(credit to @AutumnalBlake)
 
 ### Ruh Roh - shits broke
 
