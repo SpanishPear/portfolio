@@ -7,6 +7,7 @@ Written in MUI and React
  - [ ] Resume
  - [ ] Projects
  - [ ] More blog posts
- - [ ] Specifically, a blog post on terminal customisation - that's not UNSW specific. 
+  - [ ] ablog post on terminal customisation - that's not UNSW specific. 
+  - [ ] ablog post on terminal colours for 1511. 
  - [ ] Make blog posts mobile friendly
  - [ ] Make personal image on / resize better
