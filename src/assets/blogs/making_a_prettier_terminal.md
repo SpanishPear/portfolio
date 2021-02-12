@@ -114,52 +114,14 @@ zsh
 
 (credit to @AutumnalBlake)
 
-### Ruh Roh - shits broke
-
-OH NO everything is broken :(
-
-If you're looking at something like this (without the first line)
-
-<img style="margin: 0 auto;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/zsh-cse-broke.png">
-
-then don't worry - I knew that would break, so lets talk about how to fix it.
-
-You may be wondering "thats strange, I guess we don't have the right version of zsh because powerlevel10k is using a really new version of zsh! The prompt says 5.1, it must be super new for CSE to not support it!"
-
-Well I hate to break it to you folks but ZSH 5.1. was realeased **five years ago** (31.5.2015)
-
-It seems that we're still on a zsh version (5.0.7) from 2014 :(
-
-No fear though! We can fix this :D
-
-## Installing zsh on CSE (round 2)
-
-So, you want the latest version of zsh eh?
-
-We're gonna have to use our broken terminal for now - but it should be nothing more than copying and pasting commands. Enter the following commands one at a time. You'll know when the command is done when you see the little '->' arrow on the bottom left
-
-```
-cd ~
-wget -O zsh-5-8.tar.xz https://sourceforge.net/projects/zsh/files/zsh/5.8/zsh-5.8.tar.xz/download
-tar xf zsh-5-8.tar.xz
-cd zsh-5.8
-./configure --prefix="$HOME/bin"
-make && make install
-cd ~
-rm -rf zsh-5-8.tar.xz zsh-5-8
-```
-
-If succesful, you should see three folders once you navigate to `~/bin` which are (`bin`, `share`, and `lib`).
-
 Then, to make sure that we run OUR version of zsh every time, we add the folllowing to the TOP (!!) of `~/.bashrc`
 
 ```
-export PATH="$HOME/bin/bin:$PATH";
-export SHELL="$HOME/bin/bin/zsh";
-export MODULE_PATH="$Home/bin/lib/zsh/5.8/zsh";
+export SHELL="/usr/local/bin/zsh";
 exec "$SHELL" -l;
 ```
 
+(above is untested, pls let me know if it breaks)
 Finally, run
 
 ```
@@ -171,29 +133,6 @@ and you'll be met with the Powerlevel10k configuration wizard (YAY!)
 Go through and answer the questions, formatting your terminal to your liking.
 
 Congratulations you now have a pretty terminal!
-
-### Assorted CSE x Powerlevel10k Issues
-
-You have a pretty terminal, but you may start to notice a few issues
-
-#### fetching gitstatusd
-
-Every time you login (/open) a cse terminal - you might see "fetching gitstatusd..." for a few seconds.
-While this probably wouldnt annoy the average person - it absolutely infuriates me (and a few others)/
-
-[@insou22](https://github.com/insou22) has kindly provided a script to fix this issue, which you can run using
-
-```
-curl https://gist.insou.dev/gitstatus | sh
-```
-
-followed by
-
-```
-source ~/.bashrc
-```
-
-This will download `gitstatusd` and ensure that every time we open zsh - the computer knows where to find it, wheras whats happenning currently is that the cache is wiped every time you log off which is #notgood
 
 ## Further extensions + customisation
 
