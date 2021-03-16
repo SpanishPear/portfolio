@@ -98,6 +98,13 @@ and then finally, we set the theme (should be on line 11) in our `~/.zshrc`:
 ```
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
+We also want to add the following line to our zshrc file (preferably the end!)
+
+```
+export TERM=xterm-256color
+```
+
+Please also install the correct fonts (if you're on CSE, scroll down!) by following the instructions [here](https://github.com/romkatv/powerlevel10k/blob/master/README.md#fonts)
 
 after you save this, we need to once again make sure to refresh your terminal configuration with
 
@@ -238,6 +245,31 @@ You now have a pretty terminal, and theres so much more you can do!
 Checkout the following extra resources
 
 # Extras + Notes
+
+### running on CSE
+
+#### installing fonts
+
+Download the four font files on the powerlevel10k homepage, then inside vlab, create a folder in your home directory (~) `mkdir ~/.fonts` and move all the font files there. 
+Open xterm and go edit->preferences->appearances  and select the installed font. 
+#### fetching gitstatusd
+
+Every time you login (/open) a cse terminal - you might see "fetching gitstatusd..." for a few seconds.
+While this probably wouldnt annoy the average person - it absolutely infuriates me (and a few others)/
+
+[@insou22](https://github.com/insou22) has kindly provided a script to fix this issue, which you can run using
+
+```
+curl https://gist.insou.dev/gitstatus | sh
+```
+
+followed by
+
+```
+source ~/.bashrc
+```
+
+This will download `gitstatusd` and ensure that every time we open zsh - the computer knows where to find it, wheras whats happenning currently is that the cache is wiped every time you log off which is #notgood
 
 ### Further Customisation:
 
