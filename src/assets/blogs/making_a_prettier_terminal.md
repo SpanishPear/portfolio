@@ -20,14 +20,14 @@ So, you want some colours eh?
 
 Simply run the command
 
-```
+```bash
 1511 colours
 ```
 
 should setup your bash terminal to now be colourful! Make sure to refresh your terminal configuration with
 
-```
-source ~/.bashrc
+```bash
+exec bash
 ```
 
 in order to see it take effect.
@@ -77,7 +77,7 @@ The default location is `~/.oh-my-zsh` (hidden in your home directory, you can a
 
 To install ohmyzsh - follow the instructions [here](https://github.com/ohmyzsh/ohmyzsh#getting-started), or trust that I'm not trying to hack your computer, and run the following:
 
-```
+```bash
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
@@ -89,18 +89,18 @@ Now that we've got ohmyzsh, we want to install the powerlevel10k theme.
 
 Take a look at the instructions [here](https://github.com/romkatv/powerlevel10k#oh-my-zsh), or trust me again (???) and run
 
-```
+```bash
 git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 ```
 
 and then finally, we set the theme (should be on line 11) in our `~/.zshrc`:
 
-```
+```txt
 ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 We also want to add the following line to our zshrc file (preferably the end!)
 
-```
+```txt
 export TERM=xterm-256color
 ```
 
@@ -108,8 +108,8 @@ Please also install the correct fonts (if you're on CSE, scroll down!) by follow
 
 after you save this, we need to once again make sure to refresh your terminal configuration with
 
-```
-source ~/.zshrc
+```bash
+exec zsh
 ```
 
 in order to see it take effect. 
@@ -128,11 +128,10 @@ export SHELL="/usr/local/bin/zsh";
 exec "$SHELL" -l;
 ```
 
-(above is untested, pls let me know if it breaks)
 Finally, run
 
-```
-source ~/.bashrc
+```bash
+exec bash
 ```
 
 and you'll be met with the Powerlevel10k configuration wizard (YAY!)
@@ -149,7 +148,7 @@ Congratulations you now have a pretty terminal!
 
 Clone the syntax highlighter
 
-```
+```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
@@ -157,14 +156,14 @@ Activate it by adding it to the `plugins` array inside `~/.zshrc`, and then sour
 
 ie making sure that the plugins line is:
 
-```
+```txt
 plugins=(git zsh-syntax-highlighting)
 ```
 
 and then running
 
-```
-source ~/.zshrc
+```bash
+exec zsh
 ```
 
 #### zsh-autosuggestions
@@ -175,7 +174,7 @@ If you press the<kbd> → </kbd> key (forward-char widget) or <kbd>End</kbd> (en
 
 Clone the plugin
 
-```
+```bash
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 
@@ -183,15 +182,15 @@ Activate it by adding it to the `plugins` array inside `~/.zshrc`, and then sour
 
 ie making sure that the plugins line is:
 
-```
+```txt
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 ```
 
 and then running
 
-```
-source ~/.zshrc
+```bash
+exec zsh
 ```
 
 #### zsh-z
@@ -200,20 +199,20 @@ ZSH-z is a command line tool that allows you to jump quickly to directories that
 
 Same as the other plugins, we clone
 
-```
+```bash
 git clone https://github.com/agkozak/zsh-z $ZSH_CUSTOM/plugins/zsh-z
 ```
 
 add
 
-```
+```bash
 plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-z)
 ```
 
-and source
+and updatee
 
 ```
-source ~/.zshrc
+exec zsh
 ```
 
 ### exa
@@ -223,7 +222,7 @@ Exa is a "modern replacement for _ls_
 
 simply run
 
-```
+```bash
 cargo install exa
 mv ~/.cargo/bin/exa ~/bin
 ```
@@ -232,11 +231,11 @@ you can remove cargo if you are running out of space, since we have kept exa in 
 
 I like to use the alias
 
-```
+```bash
 alias ll="exa -l"
 ```
 
-in my `~/zshrc'
+in my `~/.zshrc'
 
 # Conclusion
 
@@ -259,14 +258,14 @@ While this probably wouldnt annoy the average person - it absolutely infuriates 
 
 [@insou22](https://github.com/insou22) has kindly provided a script to fix this issue, which you can run using
 
-```
+```bash
 curl https://gist.insou.dev/gitstatus | sh
 ```
 
 followed by
 
-```
-source ~/.bashrc
+```bash
+exec bash
 ```
 
 This will download `gitstatusd` and ensure that every time we open zsh - the computer knows where to find it, wheras whats happenning currently is that the cache is wiped every time you log off which is #notgood
