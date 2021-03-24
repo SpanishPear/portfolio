@@ -9,10 +9,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     minHeight: '85vh',
-    // border: '1px solid red',
   },
   landingTextTitle: {
-    fontFamily: 'Roboto, sans-serif',
+    fontFamily: 'Montserrat, sans-serif',
     letterSpacing: '0.1em',
     fontWeight: 500,
     textTransform: 'uppercase',
@@ -27,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   landingTextSubtitle: {
-    fontFamily: 'Josefin Sans, sans-serif',
-    fontWeight: 500,
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 100,
     textTransform: 'uppercase',
     color: '#378199',
     fontSize: '3.5vw',

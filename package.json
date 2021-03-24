@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "react-scripts build",
-    "deploy": "rsync -av build root@site:/var/www/spanishpe.ar/"
+    "deploy": "rsync -av build shrey@site:/var/www/spanishpe.ar/"
   },
   "eslintConfig": {
     "extends": [
