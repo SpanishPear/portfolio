@@ -1,8 +1,20 @@
+/* eslint-disable react/no-children-prop */
+/* eslint-disable react/prop-types */
 import { Box } from '@material-ui/core';
 import React, { useState } from 'react';
 import ReactMarkdownWithHtml from 'react-markdown/with-html';
 import { useParams } from 'react-router-dom';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { darcula } from 'react-syntax-highlighter/dist/esm/styles/prism/';
 import { NavBar } from '../../components';
+
+const renderers = {
+  code: ({ language, value }) => {
+    return (
+      <SyntaxHighlighter style={darcula} language={language} children={value} />
+    );
+  },
+};
 
 const BlogPost = () => {
   const [text, setText] = useState('# Loading...');
@@ -32,7 +44,11 @@ const BlogPost = () => {
           padding="30px"
           background-color="red"
         >
-          <ReactMarkdownWithHtml source={text} allowDangerousHtml />
+          <ReactMarkdownWithHtml
+            renderers={renderers}
+            children={text}
+            allowDangerousHtml
+          />
         </Box>
       </Box>
     </Box>
