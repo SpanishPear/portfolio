@@ -27,7 +27,7 @@ Simply run the command
 should setup your bash terminal to now be colourful! Make sure to refresh your terminal configuration with
 
 ```bash
-exec bash
+source ~/.bashrc
 ```
 
 in order to see it take effect.
@@ -109,7 +109,7 @@ Please also install the correct fonts (if you're on CSE, scroll down!) by follow
 after you save this, we need to once again make sure to refresh your terminal configuration with
 
 ```bash
-exec zsh
+source ~/.zshrc
 ```
 
 in order to see it take effect. 
@@ -118,7 +118,7 @@ If nothing happens, run:
 ```
 zsh
 ```
-
+or `exec zsh`
 (credit to @AutumnalBlake)
 
 Then, to make sure that we run OUR version of zsh every time, we add the folllowing to the TOP (!!) of `~/.bashrc`
@@ -131,7 +131,7 @@ exec "$SHELL" -l;
 Finally, run
 
 ```bash
-exec bash
+source ~/.bashrc
 ```
 
 and you'll be met with the Powerlevel10k configuration wizard (YAY!)
@@ -163,7 +163,7 @@ plugins=(git zsh-syntax-highlighting)
 and then running
 
 ```bash
-exec zsh
+source ~/.zshrc
 ```
 
 #### zsh-autosuggestions
@@ -190,7 +190,7 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 and then running
 
 ```bash
-exec zsh
+source ~/.zshrc
 ```
 
 #### zsh-z
@@ -212,7 +212,7 @@ plugins=(git zsh-syntax-highlighting zsh-autosuggestions zsh-z)
 and updatee
 
 ```
-exec zsh
+source ~/.zshrc
 ```
 
 ### exa
@@ -265,7 +265,7 @@ curl https://gist.insou.dev/gitstatus | sh
 followed by
 
 ```bash
-exec bash
+source ~/.bashrc
 ```
 
 This will download `gitstatusd` and ensure that every time we open zsh - the computer knows where to find it, wheras whats happenning currently is that the cache is wiped every time you log off which is #notgood
