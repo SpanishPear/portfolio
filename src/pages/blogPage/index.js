@@ -67,7 +67,7 @@ const BlogPage = () => {
               subject="HOME COMPUTING"
               date="APRIL 24TH 2020"
               title="Making a prettier terminal"
-              image="https://material-ui.com/static/images/cards/contemplative-reptile.jpg"
+              image="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/pretty-terminal.png"
             />
             {/* <BlogCard
               className={classes.gridItem}
