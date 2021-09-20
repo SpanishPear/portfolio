@@ -6,7 +6,7 @@ From
 
 to
 
-<img style="margin: 0 auto;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/pretty-terminal.png">
+<img style="text-align: center;" src="https://raw.githubusercontent.com/SpanishPear/portfolio/main/src/assets/blogs/assets/images/pretty-terminal.png">
 
 ## Assumptions
 
