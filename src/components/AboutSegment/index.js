@@ -67,8 +67,8 @@ const AboutSegment = () => {
     <Box className={classes.aboutContainer} id="about">
       <Box display="flex" flexDirection="row" width="80%">
         <ProgressiveImage
-          placeholder="/static/media/headshot-min.683b54c4.png"
-          src="/static/media/headshot.c973205f.png"
+          placeholder="https://raw.githubusercontent.com/SpanishPear/spanishpear.github.io/main/src/assets/headshot-min.png"
+          src="https://raw.githubusercontent.com/SpanishPear/spanishpear.github.io/main/src/assets/headshot-min.png"
           delay={50}
           initialBlur={50}
         >
